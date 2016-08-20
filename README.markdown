@@ -1,3 +1,3 @@
 # markdown-paste.vim
 
-Mappings to paste a register containing HTML as Markdown.
+Commands to paste HTML as Markdown. Uses xclip and Pandoc.

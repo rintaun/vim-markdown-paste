@@ -1,3 +1,8 @@
+if exists('g:loaded_markdown_paste')
+  finish
+endif
+let g:loaded_markdown_paste = 1
+
 if executable('xclip') && executable('pandoc')
   command! MarkdownPaste :r !xclip -sel clip -t text/html -o | pandoc -f html -t markdown
 
